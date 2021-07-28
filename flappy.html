@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/flappy.css">
+</head>
+
+<body class="conteudo">
+    <h1>Flappy Bird</h1>
+    <div id="fundo">
+        <div id="inicio" class="inicio">
+            <div id="passaro-inicio" class="dummy-space">
+                <img src="imgs/passaro.png" alt="DOM">
+            </div>
+            <div id="botao-container">
+                <div id="botao-iniciar">Iniciar</div>
+            </div>
+            <div class="score"></div>
+        </div>
+        <div id="jogo" wm-flappy>
+            <div id="passaro-jogo">
+                <img src="imgs/passaro.png" alt="DOM">
+            </div>
+            <div id="pontuacao">0</div>
+            <div id="obstaculo-template" class="obstaculo">
+                <div class="cano-corpo"></div>
+                <div class="cano-boca"></div>
+                <div class="espaco-vazio"></div>
+                <div class="cano-boca"></div>
+                <div class="cano-corpo"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/flappy.js"></script>
+</body>
+
+</html>
